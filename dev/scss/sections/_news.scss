@@ -2,5 +2,18 @@
     news
 ============= */
 #news{
-    
+    .news-images{
+        width: 100%;
+    }
+
+    .news-text{
+        display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+
+    div{
+        grid-area: header; 
+     }
+    }
 }
+    
