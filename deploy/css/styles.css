@@ -352,6 +352,20 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: red;
+}
+@media (min-width: 768px) {
+  body {
+    background-color: purple;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
+
 .css-grid-global {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -412,8 +426,25 @@ header div section img {
 /* =============
     hero
 ============= */
+#heroimg img {
+  width: 100%;
+}
+
 #hero img {
   width: 100%;
+}
+@media (min-width: 768px) {
+  #hero .info-under {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "first second";
+  }
+  #hero .info-under #info1 {
+    grid-area: first;
+  }
+  #hero .info-under #info2 {
+    grid-area: second;
+  }
 }
 
 /* =============

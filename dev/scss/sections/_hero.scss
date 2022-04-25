@@ -2,8 +2,33 @@
     hero
 ============= */
 
+#heroimg{
+    img{
+        width: 100%;
+    }
+}
+
 #hero{
     img{
         width: 100%;
     }
+
+    @include md{
+      .info-under{
+
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: "first second";
+        
+         #info1{
+            grid-area: first;
+        }
+
+         #info2{
+            grid-area: second;
+            }
+        }
+
+    }
+
 }

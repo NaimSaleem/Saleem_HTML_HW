@@ -2,6 +2,20 @@
     Base
 ============= */
 
+body{
+
+    background-color: red;
+
+    @include md{
+        background-color: purple;
+    }
+
+    @include lg{
+        background-color: blue;
+    }
+
+}
+
 .css-grid-global{
     display: grid;
     grid-template-columns: 16px auto 16px;
