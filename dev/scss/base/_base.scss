@@ -4,15 +4,15 @@
 
 body{
 
-    background-color: red;
+    // background-color: red;
 
-    @include md{
-        background-color: purple;
-    }
+    // @include md{
+    //     background-color: purple;
+    // }
 
-    @include lg{
-        background-color: blue;
-    }
+    // @include lg{
+    //     background-color: blue;
+    // }
 
 }
 

@@ -2,12 +2,17 @@
     news
 ============= */
 #news{
+    #news-header{
+        clear: both;
+    }
+
     .news-images{
         width: 100%;
     }
 
     .news-text{
-        display: grid;
+    clear: both;
+    display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
 
@@ -15,5 +20,95 @@
         grid-area: header; 
      }
     }
+
+    @include md{
+        clear: both;
+        display: grid;
+        grid-template-columns: 16px 1fr 1fr 16px 1fr 1fr 16px;
+        grid-row-gap: 16px;
+        grid-row: auto;
+        // grid-column-gap: 16px;
+        grid-template-areas: 
+        ". header header header header header ."
+        ". first first . second second ."
+        ". third third . fourth fourth ."
+        ". . fifth fifth fifth . ."
+        
+        ;
+
+        #news-header{
+            grid-area: header;
+            margin-bottom: -16px;
+        }
+
+        // .news-images{
+        //     grid-area: first;
+        // }
+
+        #news1{
+            grid-area: first;
+        }
+
+        #news2{
+            grid-area: second;
+        }
+
+        #news3{
+            grid-area: third;
+        }
+
+        #news4{
+            grid-area: fourth;
+        }
+
+        #news5{
+            grid-area: fifth;
+        }
+    }
+
+    @include lg{
+        clear: both;
+        display: grid;
+        grid-template-columns: 16px 1fr 1fr 16px 1fr 16px 1fr 16px 1fr 1fr 16px;
+        grid-row-gap: 16px;
+        grid-row: auto;
+        // grid-column-gap: 16px;
+        grid-template-areas: 
+        ". header header header header header header header header header ."
+        ". first first . second second second . third third ."
+        ". . fourth fourth fourth . fifth fifth fifth . ."
+        
+        ;
+
+        #news-header{
+            grid-area: header;
+            margin-bottom: -16px;
+        }
+
+        // .news-images{
+        //     grid-area: first;
+        // }
+
+        #news1{
+            grid-area: first;
+        }
+
+        #news2{
+            grid-area: second;
+        }
+
+        #news3{
+            grid-area: third;
+        }
+
+        #news4{
+            grid-area: fourth;
+        }
+
+        #news5{
+            grid-area: fifth;
+        }
+    }
+    
 }
     

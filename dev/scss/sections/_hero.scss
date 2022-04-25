@@ -31,4 +31,23 @@
 
     }
 
+    @include lg{
+
+        .info-under{
+
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "first second";
+            
+             #info1{
+                grid-area: first;
+            }
+    
+             #info2{
+                grid-area: second;
+                }
+            }
+
+    }
+
 }

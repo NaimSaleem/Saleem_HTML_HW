@@ -1,8 +1,26 @@
 /* =============
-   floating
+   under-hero
 ============= */
-#floating{
-   //  .floatRight{
-   //     float: right;
-   //  }
-}
+#under-hero{
+   
+   @include md{
+      .starts{
+         display: grid;
+         grid-template-columns: auto 16px auto;
+         grid-template-areas: "first . third";
+         margin-top: 29px;
+         margin-bottom: 39px;
+
+         #start1{
+            // border: 1px solid red;
+            grid-area: first;
+        }
+
+         #start2{
+            // border: 1px solid red;
+            grid-area: third;
+            }
+        }
+      }
+   }
+

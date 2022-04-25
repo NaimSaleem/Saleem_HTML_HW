@@ -2,11 +2,36 @@
     hero2
 ============= */
 #hero2{
-    #image1{
+
+    img{
         width: 100%;
     }
 
-    #image2{
-        width: 100%;
+@include md{
+    .images{
+        #left{
+            float: left;
+            width: 50%;
+         }
+    
+        #right{
+            float: right;
+            width: 50%;
+        } 
+    }
+@include lg{
+    .images{
+        #left{
+            float: left;
+            width: 60%;
+         }
+    
+        #right{
+            float: right;
+            width: 40%;
+            } 
+        }
+
+    }
     }
 }

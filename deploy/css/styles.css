@@ -352,20 +352,6 @@ template {
 /* =============
     Base
 ============= */
-body {
-  background-color: red;
-}
-@media (min-width: 768px) {
-  body {
-    background-color: purple;
-  }
-}
-@media (min-width: 1024px) {
-  body {
-    background-color: blue;
-  }
-}
-
 .css-grid-global {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -420,9 +406,62 @@ header div section img {
 /* =============
     Footer
 ============= */
+@media (min-width: 768px) {
+  #footer .footerdiv {
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+    grid-template-areas: "location newsletter" ". follow";
+  }
+  #footer .footerdiv #location {
+    grid-area: location;
+  }
+  #footer .footerdiv #newsletter {
+    grid-area: newsletter;
+  }
+  #footer .footerdiv #follow {
+    display: inline-block;
+    grid-area: follow;
+  }
+}
+@media (min-width: 1024px) {
+  #footer .footerdiv {
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "location newsletter follow";
+  }
+  #footer .footerdiv #location {
+    grid-area: location;
+  }
+  #footer .footerdiv #newsletter {
+    grid-area: newsletter;
+  }
+  #footer .footerdiv #follow {
+    grid-area: follow;
+  }
+}
+
 /* =============
-   floating
+   under-hero
 ============= */
+@media (min-width: 768px) {
+  #under-hero .starts {
+    display: grid;
+    grid-template-columns: auto 16px auto;
+    grid-template-areas: "first . third";
+    margin-top: 29px;
+    margin-bottom: 39px;
+  }
+  #under-hero .starts #start1 {
+    grid-area: first;
+  }
+  #under-hero .starts #start2 {
+    grid-area: third;
+  }
+}
+
 /* =============
     hero
 ============= */
@@ -446,30 +485,122 @@ header div section img {
     grid-area: second;
   }
 }
+@media (min-width: 1024px) {
+  #hero .info-under {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "first second";
+  }
+  #hero .info-under #info1 {
+    grid-area: first;
+  }
+  #hero .info-under #info2 {
+    grid-area: second;
+  }
+}
 
 /* =============
     hero2
 ============= */
-#hero2 #image1 {
+#hero2 img {
   width: 100%;
 }
-#hero2 #image2 {
-  width: 100%;
+@media (min-width: 768px) {
+  #hero2 .images #left {
+    float: left;
+    width: 50%;
+  }
+  #hero2 .images #right {
+    float: right;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  #hero2 .images #left {
+    float: left;
+    width: 60%;
+  }
+  #hero2 .images #right {
+    float: right;
+    width: 40%;
+  }
 }
 
 /* =============
     news
 ============= */
+#news #news-header {
+  clear: both;
+}
 #news .news-images {
   width: 100%;
 }
 #news .news-text {
+  clear: both;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
 }
 #news .news-text div {
   grid-area: header;
+}
+@media (min-width: 768px) {
+  #news {
+    clear: both;
+    display: grid;
+    grid-template-columns: 16px 1fr 1fr 16px 1fr 1fr 16px;
+    grid-row-gap: 16px;
+    grid-row: auto;
+    grid-template-areas: ". header header header header header ." ". first first . second second ." ". third third . fourth fourth ." ". . fifth fifth fifth . .";
+  }
+  #news #news-header {
+    grid-area: header;
+    margin-bottom: -16px;
+  }
+  #news #news1 {
+    grid-area: first;
+  }
+  #news #news2 {
+    grid-area: second;
+  }
+  #news #news3 {
+    grid-area: third;
+  }
+  #news #news4 {
+    grid-area: fourth;
+  }
+  #news #news5 {
+    grid-area: fifth;
+  }
+}
+@media (min-width: 1024px) {
+  #news {
+    clear: both;
+    display: grid;
+    grid-template-columns: 16px 1fr 1fr 16px 1fr 16px 1fr 16px 1fr 1fr 16px;
+    grid-row-gap: 16px;
+    grid-row: auto;
+    grid-template-areas: ". header header header header header header header header header ." ". first first . second second second . third third ." ". . fourth fourth fourth . fifth fifth fifth . .";
+  }
+  #news #news-header {
+    grid-area: header;
+    margin-bottom: -16px;
+  }
+  #news #news1 {
+    grid-area: first;
+  }
+  #news #news2 {
+    grid-area: second;
+  }
+  #news #news3 {
+    grid-area: third;
+  }
+  #news #news4 {
+    grid-area: fourth;
+  }
+  #news #news5 {
+    grid-area: fifth;
+  }
 }
 
 /* =============
