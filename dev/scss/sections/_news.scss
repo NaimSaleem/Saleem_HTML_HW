@@ -2,6 +2,39 @@
     news
 ============= */
 #news{
+
+    h1{
+        font-family: 'Montserrat';
+        font-size: rem-calc(20px);
+        font-weight: 300;
+        margin-top: 20px;
+    }
+
+    h2{
+        font-family: 'Montserrat';
+        font-size: rem-calc(24px);
+        font-weight: 900;
+        font-style: italic;
+        Margin: 18px 0 18px 0;
+    }
+
+    button{
+        font-family: 'Tinos';
+        font-size: rem-calc(14px);
+        font-weight: 700;
+        margin-top: 34px;
+        margin-bottom: 34px;
+        padding: 7px 12px 10px 26px;
+    }
+
+    p{
+        margin-bottom: 36px;
+    }
+
+    img{
+        margin-top: 20px;
+    }
+
     #news-header{
         clear: both;
     }
@@ -39,6 +72,10 @@
         #news-header{
             grid-area: header;
             margin-bottom: -16px;
+        }
+
+        h1{
+            font-size: rem-calc(28px);
         }
 
         // .news-images{
@@ -84,6 +121,11 @@
             grid-area: header;
             margin-bottom: -16px;
         }
+        
+        h1{
+            font-size: rem-calc(37px);
+        }
+
 
         // .news-images{
         //     grid-area: first;
@@ -110,5 +152,10 @@
         }
     }
     
+    @include xl{
+        margin-left: 225px;
+        margin-right: 225px;
+    }
+
 }
     

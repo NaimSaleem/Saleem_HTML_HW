@@ -352,6 +352,12 @@ template {
 /* =============
     Base
 ============= */
+body p {
+  font-family: "Tinos";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .css-grid-global {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -406,6 +412,32 @@ header div section img {
 /* =============
     Footer
 ============= */
+#footer h2 {
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 34px;
+}
+#footer h3 {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 18px;
+}
+#footer p {
+  font-family: "Montserrat";
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+}
+#footer button {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+#footer #newsletter input {
+  margin-top: 22px;
+}
 @media (min-width: 768px) {
   #footer .footerdiv {
     display: grid;
@@ -442,11 +474,48 @@ header div section img {
     grid-area: follow;
   }
 }
+@media (min-width: 1200px) {
+  #footer {
+    margin: 0 225px 0 225px;
+  }
+}
 
 /* =============
    under-hero
 ============= */
+#under-hero h2 {
+  font-family: "Montserrat";
+  font-size: 1.375rem;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 42px;
+}
+#under-hero aside {
+  margin-top: 52px;
+  margin-bottom: 42px;
+}
+#under-hero button {
+  font-family: "Tinos";
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 6px;
+  padding: 7px 12px 10px 26px;
+}
+#under-hero .starts .under-hero-content {
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+#under-hero .starts .under-hero-content aside img {
+  width: 100%;
+}
 @media (min-width: 768px) {
+  #under-hero h2 {
+    font-family: "Montserrat";
+    font-size: 1.9375rem;
+    font-weight: 900;
+    font-style: italic;
+  }
   #under-hero .starts {
     display: grid;
     grid-template-columns: auto 16px auto;
@@ -461,12 +530,29 @@ header div section img {
     grid-area: third;
   }
 }
+@media (min-width: 1200px) {
+  #under-hero {
+    margin: 0 225px 0 225px;
+  }
+}
 
 /* =============
     hero
 ============= */
 #heroimg img {
   width: 100%;
+}
+
+.info-under h3 {
+  font-family: "Tinos";
+  font-size: 1.125rem;
+  margin-top: 11px;
+}
+.info-under #vod1 {
+  margin: 11px 0 6px 0;
+}
+.info-under #p1 {
+  margin-top: 6px;
 }
 
 #hero img {
@@ -498,6 +584,11 @@ header div section img {
     grid-area: second;
   }
 }
+@media (min-width: 1200px) {
+  #hero .info-under {
+    margin: 0 225px 0 225px;
+  }
+}
 
 /* =============
     hero2
@@ -505,30 +596,79 @@ header div section img {
 #hero2 img {
   width: 100%;
 }
+#hero2 #left {
+  margin-top: 34px;
+}
 @media (min-width: 768px) {
+  #hero2 .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+  }
   #hero2 .images #left {
-    float: left;
-    width: 50%;
+    grid-area: left;
+    width: 100%;
   }
   #hero2 .images #right {
-    float: right;
-    width: 50%;
+    grid-area: right;
+    width: 100%;
+    margin-top: 34px;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
+  #hero2 .images {
+    display: grid;
+    grid-template-columns: 16px repeat(2, 1fr) 16px;
+    grid-template-areas: ". left right .";
+  }
   #hero2 .images #left {
-    float: left;
-    width: 60%;
+    width: 100%;
+    grid-area: left;
   }
   #hero2 .images #right {
-    float: right;
-    width: 40%;
+    width: 100%;
+    grid-area: right;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  #hero2 #left {
+    margin-left: 18px;
+  }
+  #hero2 #right {
+    margin-right: 18px;
   }
 }
 
 /* =============
     news
 ============= */
+#news h1 {
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 20px;
+}
+#news h2 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+  Margin: 18px 0 18px 0;
+}
+#news button {
+  font-family: "Tinos";
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  padding: 7px 12px 10px 26px;
+}
+#news p {
+  margin-bottom: 36px;
+}
+#news img {
+  margin-top: 20px;
+}
 #news #news-header {
   clear: both;
 }
@@ -556,6 +696,9 @@ header div section img {
   #news #news-header {
     grid-area: header;
     margin-bottom: -16px;
+  }
+  #news h1 {
+    font-size: 1.75rem;
   }
   #news #news1 {
     grid-area: first;
@@ -586,6 +729,9 @@ header div section img {
     grid-area: header;
     margin-bottom: -16px;
   }
+  #news h1 {
+    font-size: 2.3125rem;
+  }
   #news #news1 {
     grid-area: first;
   }
@@ -602,7 +748,16 @@ header div section img {
     grid-area: fifth;
   }
 }
+@media (min-width: 1200px) {
+  #news {
+    margin-left: 225px;
+    margin-right: 225px;
+  }
+}
 
 /* =============
     search
 ============= */
+#search {
+  margin: 16px 0 16px 0;
+}

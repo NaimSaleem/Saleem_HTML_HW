@@ -2,8 +2,53 @@
    under-hero
 ============= */
 #under-hero{
-   
+   h2{
+      font-family: 'Montserrat';
+      font-size: rem-calc(22);
+      font-weight: 900;
+      font-style: italic;
+      margin-top: 42px;
+   }
+
+   aside{
+      margin-top: 52px;
+      margin-bottom: 42px;
+   }
+
+   button{
+      font-family: 'Tinos';
+      font-size: rem-calc(14);
+      font-weight: 400;
+      text-align: left;
+      margin-top: 6px;
+      padding: 7px 12px 10px 26px;
+   }
+
+   .starts{
+
+      .under-hero-content{
+         display: grid;
+         grid-template-columns: 70% auto;
+
+         aside{
+            img{
+               width: 100%;
+            } 
+         }
+
+      }
+
+   }
+
+
    @include md{
+
+      h2{
+         font-family: 'Montserrat';
+         font-size: rem-calc(31);
+         font-weight: 900;
+         font-style: italic;
+      }
       .starts{
          display: grid;
          grid-template-columns: auto 16px auto;
@@ -21,6 +66,10 @@
             grid-area: third;
             }
         }
+      }
+
+      @include xl{
+         margin: 0 225px 0 225px;
       }
    }
 

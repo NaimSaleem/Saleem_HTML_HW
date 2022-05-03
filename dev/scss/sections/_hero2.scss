@@ -7,31 +7,58 @@
         width: 100%;
     }
 
+    #left{
+        margin-top: 34px;
+    }
+
+
+
 @include md{
     .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "left right";
+        
         #left{
-            float: left;
-            width: 50%;
+            grid-area: left;
+            width: 100%;
          }
     
         #right{
-            float: right;
-            width: 50%;
+            grid-area: right;
+            width: 100%;
+            margin-top: 34px;
         } 
     }
 @include lg{
     .images{
+        display: grid;
+        grid-template-columns: 16px repeat(2, 1fr) 16px;
+        grid-template-areas: ". left right .";
         #left{
-            float: left;
-            width: 60%;
+            width: 100%;
+            grid-area: left;
          }
     
         #right{
-            float: right;
-            width: 40%;
+            width: 100%;
+            grid-area: right;
             } 
         }
 
     }
+@include xl{
+
+    #left{
+        margin-left: 18px;
+    }
+
+    #right{
+        margin-right: 18px;
+    }
+
+}
+
+
     }
 }

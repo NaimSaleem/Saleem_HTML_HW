@@ -8,6 +8,23 @@
     }
 }
 
+
+.info-under{
+    h3{
+        font-family: 'Tinos';
+        font-size: rem-calc(18px);
+        margin-top: 11px;
+    }
+
+    #vod1{
+        margin: 11px 0 6px 0;
+    }
+
+    #p1{
+        margin-top: 6px;
+    }
+}
+
 #hero{
     img{
         width: 100%;
@@ -48,6 +65,12 @@
                 }
             }
 
+    }
+
+    @include xl{
+        .info-under{
+            margin: 0 225px 0 225px;
+        }
     }
 
 }

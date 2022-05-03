@@ -4,6 +4,41 @@
 
 #footer{ 
 
+        
+
+    h2{
+        font-family: 'Montserrat';
+        font-size: rem-calc(20);
+        font-weight: 600;
+        margin-top: 34px;
+    }
+
+    h3{
+        font-family: 'Montserrat';
+        font-size: rem-calc(16);
+        font-weight: 500;
+        margin-top: 18px;
+    }
+        
+    p{
+        font-family: 'Montserrat';
+        font-size: rem-calc(12);
+        font-weight: 400;
+        margin: 10px 0 10px 0;
+    }
+
+    button{
+        font-family: 'Montserrat';
+        font-size: rem-calc(14);
+        font-weight: 600;
+    }
+
+    #newsletter{
+        input{
+            margin-top: 22px;
+        }
+    }
+
     @include md{
         .footerdiv{
             display: grid;
@@ -56,6 +91,10 @@
             }
     
     
+            }
+
+            @include xl{
+                margin: 0 225px 0 225px;
             }
 
 

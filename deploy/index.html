@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Starting Template</title>
 </head>
 
@@ -20,8 +22,10 @@
     <script src="js/scripts-min.js"></script>
     <section id="search" class="css-grid-global">
                 <div>
-                    <input type="search" name="searchInput" placeholder="Search Other WoW News">
-                    <input type="image" src="img/Main Page/searchbutton.svg">
+                    <section id="searchInput">
+                        <input type="search" name="searchInput" placeholder="Search Other WoW News">
+                        <input type="image" src="img/Main Page/searchbutton.svg">
+                    </section>
                 </div>
             </section>
     <section id="heroimg">
@@ -32,13 +36,13 @@
                   <div class="info-under">
                     <div id="info1">
                         <h3>2022 Race to World First is Completed!</h3>
-                        <p>Congratulations to the guild: Echo!</p>
+                        <p id="p1">Congratulations to the guild: Echo!</p>
                         <p2>Details</p2>
                         <input type="image" src="img/Main Page/sort-up-solid.svg">
                     </div>
                     <div id="info2">
-                    <h3>VOD Available on twitch.tv/echo_esports</h3>
-                    <p>Note: You MUST log in, to view vods.</p>
+                    <h3 id="vod1">VOD Available on twitch.tv/echo_esports</h3>
+                    <p id="p1">Note: You MUST log in, to view vods.</p>
                     <p2>Details</p2>
                     <input type="image" src="img/Main Page/sort-up-solid.svg">
                     </div>
@@ -49,20 +53,25 @@
                 </section>
     <section id="under-hero" class="css-grid-global">
                         <div class="starts">
-                            <section id="start1">
+                        <section id="start1" class="under-hero-content">
+                            <section>
                                 <h2>Need DPS stats?</h2>
                                 <button>Start here</button>
-                                <aside>
-                                     <img src="img/Main Page/warlockhand.svg" alt="warlock hand">
-                                </aside>
                             </section>
-                            <section id="start2">
+                            <aside id="img1">
+                                <img src="img/Main Page/warlockhand.svg" alt="warlock hand">
+                           </aside>
+                        </section>
+                    
+                        <section id="start2" class="under-hero-content">
+                            <section>
                                 <h2>Want B.I.S Gear?</h2>
                                 <button>Read here</button>
-                                <aside>
-                                    <img src="img/Main Page/gear.svg" alt="Example Gear">
-                                </aside>
                             </section>
+                            <aside id="img2">
+                                <img src="img/Main Page/gear.svg" alt="Example Gear">
+                            </aside>
+                        </section>
                         </div>    
                     </section>
     <section id="hero2">
@@ -92,7 +101,7 @@
                             
                             
                             
-                                    <section id="news1">
+                                    <section id="news1" class="news-all">
                                         <img src="img/Main Page/liquidmax.svg" alt="Liquid Maximum" class="news-images">
                                         <section class="css-grid-global">
                                             <div>  
@@ -103,7 +112,7 @@
                                         </section>
                                     </section>
                             
-                                    <section id="news2">
+                                    <section id="news2" class="news-all">
                                         <img src="img/Main Page/jailer_defeat.svg" alt="Jailer Defeat" class="news-images">
                                         <section class="css-grid-global">
                                             <div>
@@ -114,7 +123,7 @@
                                         </section>
                                     </section>
                             
-                                    <section id="news3">
+                                    <section id="news3" class="news-all">
                                         <img src="img/Main Page/deathwing.svg" alt="Deathwing" class="news-images">
                                         <section class="css-grid-global">
                                             <div>
@@ -125,7 +134,7 @@
                                         </section>
                                     </section>
                             
-                                    <section id="news4">
+                                    <section id="news4" class="news-all">
                                         <img src="img/Main Page/lich_king.svg" alt="Lich King" class="news-images">
                                         <section class="css-grid-global">
                                             <div>
@@ -136,7 +145,7 @@
                                         </section>   
                                     </section>
                             
-                                    <section id="news5">
+                                    <section id="news5" class="news-all">
                                         <img src="img/Main Page/bfa_promo.svg" alt="Battle for Azeroth" class="news-images">
                                         <section class="css-grid-global">
                                             <div>
@@ -155,7 +164,8 @@
                                                            
                                         <ul>
                                             <li>
-                                                <h2>Irvine, California</h2>
+                                                <h3>Irvine, California</h3>
+                                                <section class="location-info">
                                                     <img src="img/Footer/location-arrow-light.svg" alt="pointer location icon">
                                                     <aside>
                                                         <p>16215 Alton Parkway <br> Irvine, CA 92618</p>
@@ -164,38 +174,38 @@
                                                     <aside>
                                                         <p>(123) 456-7890</p>
                                                     </aside>
+                                                </section>
                                             </li>
                                 
                                             <li>
-                                                <h2>Santa Monica, California</h2>
-                                
+                                                <h3>Santa Monica, California</h3>
+                                                <section class="location-info">
                                                     <img src="img/Footer/location-arrow-light.svg" alt="pointer location icon">
                                                     <aside>
-                                                        <p>2701 Olympic Boulevard <br> Building B <br> Santa Monica, CA 90404</p>
+                                                        <p>2701 Olympic Boulevard, Building B <br> Santa Monica, CA 90404</p>
                                                     </aside>
+                                                <img src="img/Footer/mobile-android-light.svg" alt="phone icon">
+                                                    <aside>
+                                                    <p>(123) 456-7890</p>
+                                                    </aside>
+                                                </section>
+                                            </li>
                                 
-                                
+                                            <li>
+                                                <h3>Santa Monica, California</h3>
+                                                <section class="location-info">
+                                                    <section id="img">
+                                                        <img src="img/Footer/location-arrow-light.svg" alt="pointer location icon">
+                                                    </section>
+                                                    <aside>
+                                                        <p>3100 Ocean Park Blvd <br> Santa Monica, CA 90404</p>
+                                                    </aside>
                                                     <img src="img/Footer/mobile-android-light.svg" alt="phone icon">
                                                     <aside>
                                                         <p>(123) 456-7890</p>
                                                     </aside>
-                                                    
+                                                </section>
                                 
-                                            </li>
-                                
-                                            <li>
-                                                <h2>Santa Monica, California</h2>
-                                
-                                                    <img src="img/Footer/location-arrow-light.svg" alt="pointer location icon">
-                                                    <aside>
-                                                        <p>Address <br> 3100 Ocean Park Blvd <br> Santa Monica, CA 90404</p>
-                                                    </aside>
-                                
-                                
-                                                    <img src="img/Footer/mobile-android-light.svg" alt="phone icon">
-                                                    <aside>
-                                                        <p>(123) 456-7890</p>
-                                                    </aside>
                                 
                                             </li>
                                         </ul>
