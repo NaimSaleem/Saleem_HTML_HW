@@ -389,6 +389,11 @@ ul li {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -423,23 +428,47 @@ header div section img {
 /* =============
     Footer
 ============= */
+#footer {
+  margin-top: 24px;
+  background-color: var(--navy-blue);
+}
 #footer h2 {
   font-family: "Montserrat";
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 34px;
+  color: var(--off-white);
+}
+#footer #locations {
+  padding-top: 12px;
+}
+#footer .footersections #followlist {
+  display: flex;
+}
+#footer .footersections #followlist li {
+  margin-right: 24px;
 }
 #footer h3 {
   font-family: "Montserrat";
   font-size: 1rem;
   font-weight: 500;
   margin-top: 18px;
+  color: var(--off-white);
 }
 #footer p {
   font-family: "Montserrat";
   font-size: 0.75rem;
   font-weight: 400;
   margin: 10px 0 10px 0;
+  color: var(--off-white);
+}
+#footer img {
+  margin-right: 24px;
+}
+#footer .location-sections {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
 }
 #footer button {
   font-family: "Montserrat";
@@ -450,75 +479,108 @@ header div section img {
   margin-top: 22px;
 }
 @media (min-width: 768px) {
-  #footer .footerdiv {
+  #footer {
+    margin-top: 40px;
+  }
+  #footer #footerdiv {
     display: grid;
     grid-column-gap: 16px;
     grid-template-columns: 50% 50%;
     align-items: start;
-    grid-template-areas: "location newsletter" ". follow";
+    grid-template-areas: "location newsletter" "location follow";
   }
-  #footer .footerdiv #location {
+  #footer #footerdiv #location {
     grid-area: location;
   }
-  #footer .footerdiv #newsletter {
+  #footer #footerdiv #newsletter {
     grid-area: newsletter;
   }
-  #footer .footerdiv #follow {
-    display: inline-block;
+  #footer #footerdiv #follow {
+    padding-top: 0;
     grid-area: follow;
   }
 }
 @media (min-width: 1024px) {
-  #footer .footerdiv {
+  #footer {
+    margin-top: 60px;
+  }
+  #footer #footerdiv {
     display: grid;
     grid-column-gap: 16px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "location newsletter follow";
   }
-  #footer .footerdiv #location {
+  #footer #footerdiv #location {
     grid-area: location;
   }
-  #footer .footerdiv #newsletter {
+  #footer #footerdiv #newsletter {
     grid-area: newsletter;
   }
-  #footer .footerdiv #follow {
+  #footer #footerdiv #follow {
     grid-area: follow;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #footer {
-    margin: 0 225px 0 225px;
+    padding-left: 255px;
+    padding-right: 255px;
   }
 }
 
 /* =============
    under-hero
 ============= */
+#under-hero body {
+  margin: 0;
+}
+#under-hero #start1 {
+  background-color: var(--light-green);
+  margin-top: 16px;
+  padding: 16px;
+}
+#under-hero #start1 aside {
+  background-image: url("../img/Main Page/lifting.jpg");
+  background-position: 50% 50%;
+}
+#under-hero #start2 {
+  background-color: var(--light-green);
+  margin-top: 16px;
+  padding: 16px;
+}
+#under-hero #start2 aside {
+  background-image: url("../img/Main Page/gear.svg");
+  background-position: 50% 50%;
+}
 #under-hero h2 {
   font-family: "Montserrat";
-  font-size: 1.375rem;
+  font-size: 1.875rem;
   font-weight: 900;
   font-style: italic;
-  margin-top: 42px;
-}
-#under-hero aside {
-  margin-top: 52px;
-  margin-bottom: 42px;
 }
 #under-hero button {
   font-family: "Tinos";
   font-size: 0.875rem;
   font-weight: 400;
   text-align: left;
-  margin-top: 6px;
+  margin-top: 24px;
   padding: 7px 12px 10px 26px;
+  background-color: var(--light-orange);
+  border: none;
 }
 #under-hero .starts .under-hero-content {
+  display: flex;
   display: grid;
   grid-template-columns: 70% auto;
+  align-items: center;
 }
-#under-hero .starts .under-hero-content aside img {
-  width: 100%;
+#under-hero .starts .under-hero-content .flush-right {
+  margin-left: auto;
+}
+#under-hero .starts .under-hero-content aside {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border: 4px solid white;
 }
 @media (min-width: 768px) {
   #under-hero h2 {
@@ -529,19 +591,21 @@ header div section img {
   }
   #under-hero .starts {
     display: grid;
-    grid-template-columns: auto 16px auto;
-    grid-template-areas: "first . third";
+    grid-template-columns: 16px auto 16px auto 16px;
+    grid-template-areas: ". first . third .";
     margin-top: 29px;
     margin-bottom: 39px;
   }
   #under-hero .starts #start1 {
     grid-area: first;
+    padding: 24px;
   }
   #under-hero .starts #start2 {
     grid-area: third;
+    padding: 24px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #under-hero {
     margin: 0 225px 0 225px;
   }
@@ -550,26 +614,51 @@ header div section img {
 /* =============
     hero
 ============= */
-#heroimg img {
-  width: 100%;
+#hero #heroimg {
+  background-image: url("../img/Main Page/hero.jpg");
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center top;
 }
-
-.info-under h3 {
+#hero .info-under > div {
+  display: flex;
+  align-items: center;
+}
+#hero .info-under > div button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.125rem;
+  margin-left: auto;
+}
+#hero .info-under > div button .show-for-lg {
+  display: none;
+}
+#hero .info-under #info1 {
+  background-color: var(--dark-orange);
+  padding: 16px;
+}
+#hero .info-under #info2 {
+  background-color: var(--light-orange);
+  padding: 16px;
+}
+#hero .info-under h3 {
   font-family: "Tinos";
   font-size: 1.125rem;
-  margin-top: 11px;
 }
-.info-under #vod1 {
+#hero .info-under #vod1 {
   margin: 11px 0 6px 0;
 }
-.info-under #p1 {
+#hero .info-under #p1 {
   margin-top: 6px;
 }
-
-#hero img {
-  width: 100%;
-}
 @media (min-width: 768px) {
+  #hero img {
+    margin-left: 8px;
+  }
+  #hero #heroimg {
+    height: 60vh;
+  }
   #hero .info-under {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -581,40 +670,78 @@ header div section img {
   #hero .info-under #info2 {
     grid-area: second;
   }
+  #hero .info-under #p1 {
+    margin-top: 0;
+  }
+  #hero .info-under #vod1 {
+    margin: 0 0 6px 0;
+  }
 }
 @media (min-width: 1024px) {
+  #hero #heroimg {
+    height: 70vh;
+  }
   #hero .info-under {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "first second";
   }
+  #hero .info-under div button .show-for-lg {
+    display: inline;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  #hero .info-under div button {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
   #hero .info-under #info1 {
     grid-area: first;
   }
+}
+@media (min-width: 1024px) {
   #hero .info-under #info2 {
     grid-area: second;
   }
 }
-@media (min-width: 1200px) {
-  #hero .info-under {
-    margin: 0 225px 0 225px;
+@media (min-width: 1440px) {
+  #hero .info-under #info1 {
+    padding-left: 225px;
   }
 }
 
 /* =============
     hero2
 ============= */
-#hero2 img {
-  width: 100%;
+#hero2 .images {
+  display: grid;
+  grid-template-rows: 50vh 70vh;
 }
 #hero2 #left {
   margin-top: 34px;
+  background-image: url("../img/Main Page/echo_celebration.jpg");
+  background-size: cover;
+}
+#hero2 #right {
+  background-image: url("../img/Main Page/echo_logo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#hero2 #rightbot {
+  background-image: url("../img/Main Page/scripe_portrait.jpg");
+  background-size: cover;
+}
+#hero2 #rightbot .show-for-xxl {
+  display: none;
 }
 @media (min-width: 768px) {
   #hero2 .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "left right";
+    grid-template-rows: 60vh;
   }
   #hero2 .images #left {
     grid-area: left;
@@ -629,8 +756,8 @@ header div section img {
 @media (min-width: 768px) and (min-width: 1024px) {
   #hero2 .images {
     display: grid;
-    grid-template-columns: 16px repeat(2, 1fr) 16px;
-    grid-template-areas: ". left right .";
+    grid-template-columns: 16px repeat(3, 1fr) 16px;
+    grid-template-areas: ". left left right ." ". left left right .";
   }
   #hero2 .images #left {
     width: 100%;
@@ -641,12 +768,24 @@ header div section img {
     grid-area: right;
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 1440px) {
+  #hero2 .images {
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: ". left left right ." ". left left rightbot.";
+  }
   #hero2 #left {
     margin-left: 18px;
   }
   #hero2 #right {
     margin-right: 18px;
+  }
+  #hero2 #rightbot {
+    width: 100%;
+    grid-area: rightbot;
+    margin-right: 18px;
+  }
+  #hero2 #rightbot .show-for-xxl {
+    display: inline;
   }
 }
 
@@ -658,6 +797,62 @@ header div section img {
   font-size: 1.25rem;
   font-weight: 300;
   margin-top: 20px;
+  color: var(--grey);
+}
+#news .news-all {
+  padding: 16px;
+}
+#news #news1 {
+  margin-top: 16px;
+}
+#news #news1 aside {
+  background-image: url("../img/Main Page/liquidmax.jpg");
+  height: 165px;
+  background-size: cover;
+  background-position: center;
+}
+#news #news2 {
+  margin-top: 16px;
+}
+#news #news2 aside {
+  height: 165px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/Main Page/jailer_defeat.jpg");
+}
+#news #news3 {
+  margin-top: 16px;
+}
+#news #news3 aside {
+  height: 165px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/Main Page/deathwing.jpg");
+}
+#news #news4 {
+  margin-top: 16px;
+}
+#news #news4 aside {
+  height: 165px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/Main Page/lich_king.jpg");
+}
+#news #news5 {
+  margin-top: 16px;
+}
+#news #news5 aside {
+  height: 165px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/Main Page/bfa_promo.jpg");
+}
+#news .news-all {
+  background-color: var(--light-green);
+}
+#news button {
+  background-color: var(--light-orange);
+  border: none;
 }
 #news h2 {
   font-family: "Montserrat";
@@ -671,14 +866,10 @@ header div section img {
   font-size: 0.875rem;
   font-weight: 700;
   margin-top: 34px;
-  margin-bottom: 34px;
   padding: 7px 12px 10px 26px;
 }
 #news p {
   margin-bottom: 36px;
-}
-#news img {
-  margin-top: 20px;
 }
 #news #news-header {
   clear: both;
@@ -759,7 +950,7 @@ header div section img {
     grid-area: fifth;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #news {
     margin-left: 225px;
     margin-right: 225px;
@@ -771,4 +962,26 @@ header div section img {
 ============= */
 #search {
   margin: 16px 0 16px 0;
+}
+#search div #searchInput form input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--grey);
+  border-radius: 0;
+  color: var(--grey);
+}
+#search ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--grey);
+  opacity: 1;
+  /* Firefox */
+}
+#search :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--grey);
+}
+#search ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--grey);
 }

@@ -3,14 +3,28 @@
 ============= */
 
 #footer{ 
-
-        
+    margin-top: 24px;
+    background-color: var(--navy-blue);  
+    
 
     h2{
         font-family: 'Montserrat';
         font-size: rem-calc(20);
         font-weight: 600;
         margin-top: 34px;
+        color: var(--off-white);
+    }
+
+    #locations{
+        padding-top: 12px;
+    }
+    .footersections{
+        #followlist{
+            display: flex;
+            li{
+                margin-right: 24px;
+            }
+        }
     }
 
     h3{
@@ -18,6 +32,7 @@
         font-size: rem-calc(16);
         font-weight: 500;
         margin-top: 18px;
+        color: var(--off-white);
     }
         
     p{
@@ -25,6 +40,19 @@
         font-size: rem-calc(12);
         font-weight: 400;
         margin: 10px 0 10px 0;
+        color: var(--off-white);
+        // display: inline;
+        // margin-left: 24px;
+    }
+
+    img{
+     margin-right: 24px;
+    }
+
+    .location-sections{
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
     }
 
     button{
@@ -40,14 +68,15 @@
     }
 
     @include md{
-        .footerdiv{
+        margin-top: 40px;
+        #footerdiv{
             display: grid;
             grid-column-gap: 16px;
             grid-template-columns: 50% 50%;
             align-items: start;
             grid-template-areas: 
             "location newsletter"
-            ". follow";
+            "location follow";
             #location{
                 // float: left;
                 grid-area: location;
@@ -58,8 +87,10 @@
             }
 
             #follow{
-                display: inline-block;
+                padding-top: 0;
                 grid-area: follow;
+
+
             }
         }
 
@@ -67,7 +98,8 @@
         }
 
         @include lg{
-            .footerdiv{
+            margin-top: 60px;
+            #footerdiv{
                 display: grid;
                 grid-column-gap: 16px;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -93,8 +125,9 @@
     
             }
 
-            @include xl{
-                margin: 0 225px 0 225px;
+            @include xxl{
+                padding-left: 255px;
+                padding-right: 255px;
             }
 
 

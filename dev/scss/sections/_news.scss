@@ -8,8 +8,72 @@
         font-size: rem-calc(20px);
         font-weight: 300;
         margin-top: 20px;
+        color:  var(--grey)
     }
 
+    .news-all{
+        padding: 16px;
+    }
+    #news1{
+        margin-top: 16px;
+        aside{
+            background-image: url('../img/Main Page/liquidmax.jpg');
+            height: 165px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    #news2{
+        margin-top: 16px;
+        aside{
+            height: 165px;
+            background-size: cover;
+            background-position: center;
+            background-image: url('../img/Main Page/jailer_defeat.jpg')   
+        }
+
+    }
+
+    #news3{
+        margin-top: 16px;
+        aside{
+            height: 165px;
+            background-size: cover;
+            background-position: center;
+            background-image: url('../img/Main Page/deathwing.jpg')
+        }
+
+    }
+
+    #news4{
+        margin-top: 16px;
+        aside{
+            height: 165px;
+            background-size: cover;
+            background-position: center;
+            background-image: url('../img/Main Page/lich_king.jpg')
+        }
+    }
+
+    #news5{
+        margin-top: 16px;
+        aside{
+            height: 165px;
+            background-size: cover;
+            background-position: center;
+            background-image: url('../img/Main Page/bfa_promo.jpg')
+        }
+
+    }
+    .news-all{
+        background-color: var(--light-green);
+    }
+
+    button{
+        background-color: var(--light-orange);
+        border: none;
+    }
     h2{
         font-family: 'Montserrat';
         font-size: rem-calc(24px);
@@ -23,7 +87,6 @@
         font-size: rem-calc(14px);
         font-weight: 700;
         margin-top: 34px;
-        margin-bottom: 34px;
         padding: 7px 12px 10px 26px;
     }
 
@@ -31,9 +94,6 @@
         margin-bottom: 36px;
     }
 
-    img{
-        margin-top: 20px;
-    }
 
     #news-header{
         clear: both;
@@ -68,7 +128,6 @@
         ". . fifth fifth fifth . ."
         
         ;
-
         #news-header{
             grid-area: header;
             margin-bottom: -16px;
@@ -152,7 +211,7 @@
         }
     }
     
-    @include xl{
+    @include xxl{
         margin-left: 225px;
         margin-right: 225px;
     }

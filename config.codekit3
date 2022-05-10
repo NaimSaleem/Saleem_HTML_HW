@@ -91,6 +91,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/Main Page\/bfa_promo.jpg" : {
+      "ft" : 16384,
+      "iS" : 17634,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/bfa_promo.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Main Page\/bfa_promo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -100,6 +113,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/Main Page\/deathwing.jpg" : {
+      "ft" : 16384,
+      "iS" : 20873,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/deathwing.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/Main Page\/deathwing.svg" : {
       "ft" : 2097152,
@@ -111,6 +137,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/Main Page\/echo_celebration.jpg" : {
+      "ft" : 16384,
+      "iS" : 43741,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/echo_celebration.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Main Page\/echo_celebration.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -121,6 +160,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/Main Page\/echo_logo.jpg" : {
+      "ft" : 16384,
+      "iS" : 14109,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/echo_logo.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Main Page\/echo_logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -130,6 +182,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/Main Page\/gear.jpg" : {
+      "ft" : 16384,
+      "iS" : 7218,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/gear.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/Main Page\/gear.svg" : {
       "ft" : 2097152,
@@ -154,6 +219,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/Main Page\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 185303,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Main Page\/hero.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -163,6 +241,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/Main Page\/jailer_defeat.jpg" : {
+      "ft" : 16384,
+      "iS" : 11853,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/jailer_defeat.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/Main Page\/jailer_defeat.svg" : {
       "ft" : 2097152,
@@ -174,6 +265,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/Main Page\/lich_king.jpg" : {
+      "ft" : 16384,
+      "iS" : 14223,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/lich_king.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Main Page\/lich_king.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -183,6 +287,32 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/Main Page\/lifting.jpg" : {
+      "ft" : 16384,
+      "iS" : 17845,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/lifting.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Main Page\/liquidmax.jpg" : {
+      "ft" : 16384,
+      "iS" : 9874,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/liquidmax.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/Main Page\/liquidmax.svg" : {
       "ft" : 2097152,
@@ -203,6 +333,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/Main Page\/scripe_portrait.jpg" : {
+      "ft" : 16384,
+      "iS" : 15100,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/scripe_portrait.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/Main Page\/scripe_portrait.svg" : {
       "ft" : 2097152,
@@ -243,6 +386,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/Main Page\/warlockhand.jpg" : {
+      "ft" : 16384,
+      "iS" : 82775,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Main Page\/warlockhand.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/Main Page\/warlockhand.svg" : {
       "ft" : 2097152,
