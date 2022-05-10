@@ -10,6 +10,17 @@ html {
 /* =============
     Variables
 ============= */
+:root {
+  --dark-orange: #E39360;
+  --light-orange: #F7B67E;
+  --white: #FFF;
+  --black: #000;
+  --light-green: #B6FFE9;
+  --off-white: #E0DFD5;
+  --navy-blue: #34506C;
+  --grey: #637275;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
